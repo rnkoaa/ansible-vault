@@ -25,3 +25,5 @@
     - src:  "{{ vault_tls_key_file }}"
       dest: "{{ vault_tls_key_file_dest }}"
       mode: "0600"
+      
+when: vault_tls_copy_keys | bool
